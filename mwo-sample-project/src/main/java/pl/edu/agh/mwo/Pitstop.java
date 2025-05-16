@@ -8,6 +8,7 @@ import java.util.Date;
 
 //@JsonNaming(PropertyNamingStrategy.SnakeCaseStrategy.class)
 public class Pitstop {
+
     @JsonProperty("session_key")
     private int sessionKey;
     @JsonProperty("meeting_key")
@@ -31,5 +32,29 @@ public class Pitstop {
                 ", pitDuration=" + pitDuration +
                 ", lapNumber=" + lapNumber +
                 '}';
+    }
+
+    public int getSessionKey() {
+        return sessionKey;
+    }
+
+    public int getMeetingKey() {
+        return meetingKey;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public int getDriverNumber() {
+        return driverNumber;
+    }
+
+    public Long getPitDuration() {
+        return pitDuration;
+    }
+
+    public int getLapNumber() {
+        return lapNumber;
     }
 }
